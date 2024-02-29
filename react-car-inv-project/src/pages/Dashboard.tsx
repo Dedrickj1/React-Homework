@@ -1,6 +1,10 @@
+import DataTable from '../components/DataTable'
+
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <DataTable />
+    </div>
   )
 }
 
