@@ -6,6 +6,7 @@ const [contactData, setData ] = useState<[]>([])
 
 async function handleDataFetch(){
     const result = await server_calls.get();
+    console.log(result)
     setData(result)
 }
 

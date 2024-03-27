@@ -34,7 +34,7 @@ const ContactForm = (props:ContactFormProps) => {
           dispatch(choosePhone(data.phone_number));
 
           server_calls.create(store.getState())
-          setTimeout( () => {window.location.reload()}, 1000);
+          // setTimeout( () => {window.location.reload()}, 1000);
         }
     }
 
@@ -43,19 +43,19 @@ const ContactForm = (props:ContactFormProps) => {
           <form onSubmit={handleSubmit(onSubmit)}>
           <div>
               <label htmlFor="year">Year of Car</label>
-              <Input {...register('Year')} name='year' placeholder="Year" />
+              <Input {...register('year')} name='year' placeholder="Year" />
             </div>
             <div>
               <label htmlFor="make">Make of Car</label>
-              <Input {...register('Make')} name='make' placeholder="Make" />
+              <Input {...register('make')} name='make' placeholder="Make" />
             </div>
             <div>
               <label htmlFor="model">Model of Car</label>
-              <Input {...register('Model')} name='model' placeholder="Model" />
+              <Input {...register('model')} name='model' placeholder="Model" />
             </div>
             <div>
               <label htmlFor="name">Contact Full Name</label>
-              <Input {...register('first')} name='full name' placeholder="Full Name" />
+              <Input {...register('name')} name='full name' placeholder="Full Name" />
             </div>
             <div>
               <label htmlFor="phone_number">Phone Number</label>

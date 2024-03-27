@@ -7,11 +7,11 @@ import { useGetData } from '../custom-hooks/FetchData';
 
 
 const columns: GridColDef[] = [
-    { field: 'id', headerName: "ID", width:90, hide: true },
-    { field: 'year', headerName: "Year of Car", flex:1},
-    { field: 'make', headerName: "Make of Car", flex:1},
-    { field: 'model', headerName: "Model of Car", flex:1},
-    { field: 'full_name', headerName: "Contact Full Name", flex: 1},
+    { field: 'id', headerName: "ID", width:90,},
+    { field: 'Year', headerName: "Year of Car", flex:1},
+    { field: 'Make', headerName: "Make of Car", flex:1},
+    { field: 'Model', headerName: "Model of Car", flex:1},
+    { field: 'name', headerName: "Full Name", flex: 1},
     { field: 'phone_number', headerName: "Phone Number", flex: 1}
 ]
 
@@ -20,6 +20,7 @@ function DataTable() {
     const [ open, setOpen ] = useState(false);
     const { contactData, getData } = useGetData();
     const [ selectionModel, setSelectionModel ] = useState<any>([])
+    console.log(contactData)
 
     const handleOpen = () => {
         setOpen(true)

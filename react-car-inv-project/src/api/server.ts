@@ -1,8 +1,8 @@
-const token = 'c595c89d2997cd95852ed7df2eeb70327a97d99488f7b330'
+const token = 'e56f143e5def29ce90c11f1a17d373707b7a85442b50076e'
 
 export const server_calls = {
     get: async () => { 
-        const response = await fetch(`https://hotline-bling.glitch.me/api/contacts`,
+        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
         {
             method: 'GET',
             headers: {
@@ -16,12 +16,11 @@ export const server_calls = {
         if (!response.ok){
             throw new Error('Failed to fetch data from the server')
         }
-
         return await response.json()
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`https://hotline-bling.glitch.me/api/contacts`,
+        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
         {
             method: 'POST',
             headers: {
@@ -41,7 +40,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`https://hotline-bling.glitch.me/api/contacts/${id}`,
+        const response = await fetch(`http://127.0.0.1:5000/api/cars/${id}`,
         {
             method: 'PUT',
             headers: {
@@ -61,7 +60,7 @@ export const server_calls = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`https://hotline-bling.glitch.me/api/contacts/${id}`,
+    const response = await fetch(`http://127.0.0.1:5000/api/cars/${id}`,
         {
             method: 'DELETE',
             headers: {
