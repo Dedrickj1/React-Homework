@@ -34,7 +34,7 @@ const ContactForm = (props:ContactFormProps) => {
           dispatch(choosePhone(data.phone_number));
 
           server_calls.create(store.getState())
-          // setTimeout( () => {window.location.reload()}, 1000);
+          setTimeout( () => {window.location.reload()}, 1000);
         }
     }
 
