@@ -53,14 +53,14 @@ const ContactForm = (props:ContactFormProps) => {
               <label htmlFor="model">Model of Car</label>
               <Input {...register('model')} name='model' placeholder="Model" />
             </div>
-            <div>
+            {/* <div>
               <label htmlFor="name">Contact Full Name</label>
               <Input {...register('name')} name='full name' placeholder="Full Name" />
             </div>
             <div>
               <label htmlFor="phone_number">Phone Number</label>
               <Input {...register('phone_number')} name='phone_number' placeholder="Phone Number" />
-            </div>
+            </div> */}
             <div className="flex p-1">
               <Button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-800 text-white"
               >

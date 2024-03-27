@@ -11,8 +11,8 @@ const columns: GridColDef[] = [
     { field: 'Year', headerName: "Year of Car", flex:1},
     { field: 'Make', headerName: "Make of Car", flex:1},
     { field: 'Model', headerName: "Model of Car", flex:1},
-    { field: 'name', headerName: "Full Name", flex: 1},
-    { field: 'phone_number', headerName: "Phone Number", flex: 1}
+    // { field: 'name', headerName: "Full Name", flex: 1},
+    // { field: 'phone_number', headerName: "Phone Number", flex: 1}
 ]
 
 
